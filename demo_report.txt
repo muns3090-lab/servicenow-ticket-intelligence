@@ -1,0 +1,122 @@
+======================================================================
+  OPS HEALTH REPORT
+  Generated: 2026-02-27 06:05 UTC
+  Period:    2025-11-28 → 2026-02-27
+  Health Score: 9/100 — Critical
+======================================================================
+
+SUMMARY
+----------------------------------------------------------------------
+  Total Tickets:        300
+  Currently Open:       92
+  P1 (Critical) Open:   14
+  Resolved:             208
+  Recurring Patterns:   39
+  Root Cause Clusters:  10
+  No Root Cause:        55.3% of resolved
+
+  92 ticket(s) remain open. 14 are P1 (critical). 83 have been open for more than 7 days.
+
+PRIORITY BREAKDOWN & MTTR
+----------------------------------------------------------------------
+  Priority     Count    Avg MTTR     SLA Breach
+  --------     -----    --------     ----------
+  P1           49       3.7h         28.6%
+  P2           77       7.3h         38.6%
+  P3           148      10.6h        13.4%
+  P4           26       40.0h        12.5%
+
+RECURRING PATTERNS (39 CLUSTERS)
+----------------------------------------------------------------------
+  1. Users Locked / Users Issues
+     Tickets: 20  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 2/9/8
+     Services: Email & Messaging, Customer Portal, Data Warehouse
+     Keywords: users locked, users, multiple users, out
+
+  2. Database / Severely Issues
+     Tickets: 16  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 5/6/3
+     Services: Data Warehouse, ERP System, Finance System
+     Keywords: database, severely, performance, performance severely
+
+  3. Reported / Vpn Disconnections Issues
+     Tickets: 16  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 5/4/7
+     Services: ERP System, CI/CD Pipeline, Customer Portal
+     Keywords: reported, vpn disconnections, vpn, reported across
+
+  4. Database / Slow Issues
+     Tickets: 15  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 3/4/4
+     Services: Data Warehouse, Email & Messaging, VPN Gateway
+     Keywords: database, slow, query alerts, slow query
+
+  5. Utilization 98 / Utilization Issues
+     Tickets: 14  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 2/7/5
+     Services: HR Platform, Data Warehouse, CI/CD Pipeline
+     Keywords: utilization 98, utilization, server disk, server
+
+  6. Backup / Space Issues
+     Tickets: 13  |  Trend: Stable  |  Multiple times per week
+     P1/P2/P3: 2/4/6
+     Services: VPN Gateway, HR Platform, Finance System
+     Keywords: backup, space, disk space, database
+
+ROOT CAUSE CLUSTERS (10 FOUND)
+----------------------------------------------------------------------
+  1. Successfully / Completed Successfully  (60 tickets)
+     Keywords: successfully, completed successfully, completed
+     → Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs.
+
+  2. Firewall / Updated  (41 tickets)
+     Keywords: firewall, updated, firewall rule, rule
+     → Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.
+     → Enforce canary/blue-green deployments and automated rollback triggers for failed health checks.
+
+  3. Leak / Vpn  (22 tickets)
+     Keywords: leak, vpn, gateway, memory leak
+     → Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts.
+     → Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.
+
+  4. System / Hr  (17 tickets)
+     Keywords: system, hr, hr system, reset
+     → Implement self-service password reset and proactive account expiry notifications.
+
+  5. Log / Log Rotation  (14 tickets)
+     Keywords: log, log rotation, rotation, rotation frequency
+
+ACTIONABLE RECOMMENDATIONS
+----------------------------------------------------------------------
+  1. [HIGH] P1 SLA breached 28.6% of the time
+     Action: Review P1 escalation path, on-call coverage, and runbook completeness.
+
+  2. [HIGH] 14 P1 ticket(s) currently open
+     Action: Escalate open P1 incidents immediately; conduct a bridge call if multiple services affected.
+
+  3. [MEDIUM] Recurring pattern: 'Users Locked / Users Issues' (20 tickets, trend: Stable)
+     Action: Open a Problem ticket to address root cause. Top keywords: users locked, users, multiple users. Primarily affects: Email & Messaging, Customer Portal.
+
+  4. [MEDIUM] Recurring pattern: 'Database / Severely Issues' (16 tickets, trend: Stable)
+     Action: Open a Problem ticket to address root cause. Top keywords: database, severely, performance. Primarily affects: Data Warehouse, ERP System.
+
+  5. [MEDIUM] Recurring pattern: 'Reported / Vpn Disconnections Issues' (16 tickets, trend: Stable)
+     Action: Open a Problem ticket to address root cause. Top keywords: reported, vpn disconnections, vpn. Primarily affects: ERP System, CI/CD Pipeline.
+
+  6. [MEDIUM] Root cause cluster: 'Successfully / Completed Successfully' (60 tickets)
+     Action: Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs.
+
+  7. [MEDIUM] Root cause cluster: 'Firewall / Updated' (41 tickets)
+     Action: Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.
+
+  8. [MEDIUM] Root cause cluster: 'Firewall / Updated' (41 tickets)
+     Action: Enforce canary/blue-green deployments and automated rollback triggers for failed health checks.
+
+  9. [MEDIUM] Root cause cluster: 'Leak / Vpn' (22 tickets)
+     Action: Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts.
+
+  10. [LOW] 55.3% of resolved tickets have no root cause recorded
+     Action: Enforce root cause capture in closure workflow; add mandatory field to ticket resolution form.
+
+======================================================================

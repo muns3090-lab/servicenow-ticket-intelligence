@@ -1,0 +1,2879 @@
+{
+  "generated_at": "2026-02-27 06:05 UTC",
+  "health_score": 9,
+  "health_label": "Critical",
+  "health_color": "#7f1d1d",
+  "metrics": {
+    "total": 300,
+    "open": 92,
+    "resolved": 208,
+    "p1_open": 14,
+    "p1_total": 49,
+    "priority_counts": {
+      "P3": 148,
+      "P2": 77,
+      "P1": 49,
+      "P4": 26
+    },
+    "mttr": {
+      "P1": {
+        "avg": 3.7,
+        "median": 2.8,
+        "sla_hours": 4,
+        "breach_pct": 28.6
+      },
+      "P2": {
+        "avg": 7.3,
+        "median": 5.9,
+        "sla_hours": 8,
+        "breach_pct": 38.6
+      },
+      "P3": {
+        "avg": 10.6,
+        "median": 5.9,
+        "sla_hours": 24,
+        "breach_pct": 13.4
+      },
+      "P4": {
+        "avg": 40.0,
+        "median": 43.6,
+        "sla_hours": 72,
+        "breach_pct": 12.5
+      }
+    },
+    "category_counts": {
+      "Network": 63,
+      "Database": 49,
+      "Application": 48,
+      "Access & Identity": 32,
+      "Security": 29,
+      "Infrastructure": 26,
+      "Email & Communication": 17,
+      "Storage & Backup": 13,
+      "Performance": 12,
+      "Monitoring & Alerting": 11
+    },
+    "group_counts": {
+      "Database Team": 43,
+      "DevOps": 37,
+      "App Support": 36,
+      "Security Operations": 35,
+      "Identity & Access": 34,
+      "Cloud Operations": 30,
+      "Network Operations": 30,
+      "Helpdesk": 28
+    },
+    "state_counts": {
+      "Closed": 126,
+      "Resolved": 82,
+      "In Progress": 40,
+      "On Hold": 30,
+      "New": 22
+    },
+    "type_counts": {
+      "Incident": 240,
+      "Change": 60
+    },
+    "time_range_start": "2025-11-28 22:32:57.772343+00:00",
+    "time_range_end": "2026-02-27 05:45:57.772343+00:00",
+    "no_root_cause_pct": 55.3
+  },
+  "patterns": {
+    "clusters": [
+      {
+        "id": 0,
+        "label": "Users Locked / Users Issues",
+        "keywords": [
+          "users locked",
+          "users",
+          "multiple users",
+          "out",
+          "out active",
+          "active"
+        ],
+        "size": 20,
+        "ticket_numbers": [
+          "INC100000",
+          "INC100004",
+          "INC100006",
+          "INC100020",
+          "INC100021",
+          "INC100024",
+          "INC100033",
+          "INC100045",
+          "INC100069",
+          "INC100101",
+          "INC100106",
+          "INC100113",
+          "INC100114",
+          "INC100123",
+          "INC100131",
+          "INC100166",
+          "INC100172",
+          "INC100196",
+          "INC100211",
+          "INC100234"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 9,
+          "P3": 8,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Email & Messaging",
+          "Customer Portal",
+          "Data Warehouse"
+        ],
+        "top_cis": [
+          "prod-db-01",
+          "k8s-worker-pool",
+          "web-lb-01"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Helpdesk",
+          "App Support"
+        ],
+        "state_dist": {
+          "Closed": 9,
+          "Resolved": 8,
+          "On Hold": 2,
+          "In Progress": 1
+        },
+        "avg_mttr_hours": 15.6,
+        "first_seen": "2025-12-04 11:28:57.772343+00:00",
+        "last_seen": "2026-02-24 21:51:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Access & Identity"
+      },
+      {
+        "id": 2,
+        "label": "Database / Severely Issues",
+        "keywords": [
+          "database",
+          "severely",
+          "performance",
+          "performance severely",
+          "query",
+          "severely degraded"
+        ],
+        "size": 16,
+        "ticket_numbers": [
+          "INC100002",
+          "INC100007",
+          "INC100026",
+          "INC100035",
+          "INC100037",
+          "INC100070",
+          "INC100072",
+          "INC100075",
+          "INC100095",
+          "INC100126",
+          "INC100129",
+          "INC100157",
+          "INC100190",
+          "INC100201",
+          "INC100215",
+          "INC100217"
+        ],
+        "priority_dist": {
+          "P1": 5,
+          "P2": 6,
+          "P3": 3,
+          "P4": 2,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Data Warehouse",
+          "ERP System",
+          "Finance System"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "web-lb-01",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "Database Team",
+          "Network Operations",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Closed": 6,
+          "Resolved": 5,
+          "On Hold": 3,
+          "New": 1,
+          "In Progress": 1
+        },
+        "avg_mttr_hours": 7.1,
+        "first_seen": "2025-12-09 02:07:57.772343+00:00",
+        "last_seen": "2026-02-21 16:42:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Database"
+      },
+      {
+        "id": 10,
+        "label": "Reported / Vpn Disconnections Issues",
+        "keywords": [
+          "reported",
+          "vpn disconnections",
+          "vpn",
+          "reported across",
+          "intermittent",
+          "region"
+        ],
+        "size": 16,
+        "ticket_numbers": [
+          "INC100016",
+          "INC100030",
+          "INC100038",
+          "INC100054",
+          "INC100062",
+          "INC100065",
+          "INC100068",
+          "INC100080",
+          "INC100096",
+          "INC100128",
+          "INC100165",
+          "INC100197",
+          "INC100200",
+          "INC100204",
+          "INC100209",
+          "INC100237"
+        ],
+        "priority_dist": {
+          "P1": 5,
+          "P2": 4,
+          "P3": 7,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "CI/CD Pipeline",
+          "Customer Portal"
+        ],
+        "top_cis": [
+          "auth-service",
+          "k8s-worker-pool",
+          "web-lb-01"
+        ],
+        "top_groups": [
+          "Helpdesk",
+          "App Support",
+          "Database Team"
+        ],
+        "state_dist": {
+          "Resolved": 6,
+          "Closed": 5,
+          "In Progress": 3,
+          "On Hold": 1,
+          "New": 1
+        },
+        "avg_mttr_hours": 8.9,
+        "first_seen": "2025-11-28 22:32:57.772343+00:00",
+        "last_seen": "2026-02-02 22:02:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 8,
+        "label": "Database / Slow Issues",
+        "keywords": [
+          "database",
+          "slow",
+          "query alerts",
+          "slow query",
+          "production",
+          "production database"
+        ],
+        "size": 15,
+        "ticket_numbers": [
+          "INC100014",
+          "INC100028",
+          "INC100034",
+          "INC100053",
+          "INC100055",
+          "INC100073",
+          "INC100074",
+          "INC100087",
+          "INC100107",
+          "INC100127",
+          "INC100149",
+          "INC100152",
+          "INC100164",
+          "INC100184",
+          "INC100227"
+        ],
+        "priority_dist": {
+          "P1": 3,
+          "P2": 4,
+          "P3": 4,
+          "P4": 4,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Data Warehouse",
+          "Email & Messaging",
+          "VPN Gateway"
+        ],
+        "top_cis": [
+          "auth-service",
+          "vpn-gw-01",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "Database Team",
+          "DevOps"
+        ],
+        "state_dist": {
+          "Resolved": 5,
+          "Closed": 4,
+          "In Progress": 3,
+          "On Hold": 2,
+          "New": 1
+        },
+        "avg_mttr_hours": 10.1,
+        "first_seen": "2025-11-30 21:35:57.772343+00:00",
+        "last_seen": "2026-02-13 19:46:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Database"
+      },
+      {
+        "id": 17,
+        "label": "Utilization 98 / Utilization Issues",
+        "keywords": [
+          "utilization 98",
+          "utilization",
+          "server disk",
+          "server",
+          "application",
+          "disk utilization"
+        ],
+        "size": 14,
+        "ticket_numbers": [
+          "INC100036",
+          "INC100040",
+          "INC100051",
+          "INC100099",
+          "INC100102",
+          "INC100124",
+          "INC100138",
+          "INC100148",
+          "INC100151",
+          "INC100213",
+          "INC100218",
+          "INC100219",
+          "INC100222",
+          "INC100226"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 7,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "HR Platform",
+          "Data Warehouse",
+          "CI/CD Pipeline"
+        ],
+        "top_cis": [
+          "api-gateway",
+          "k8s-worker-pool",
+          "nas-01"
+        ],
+        "top_groups": [
+          "Database Team",
+          "Network Operations",
+          "App Support"
+        ],
+        "state_dist": {
+          "Closed": 6,
+          "Resolved": 5,
+          "New": 2,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 11.5,
+        "first_seen": "2025-12-12 19:16:57.772343+00:00",
+        "last_seen": "2026-02-22 05:02:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Infrastructure"
+      },
+      {
+        "id": 3,
+        "label": "Backup / Space Issues",
+        "keywords": [
+          "backup",
+          "space",
+          "disk space",
+          "database",
+          "insufficient disk",
+          "insufficient"
+        ],
+        "size": 13,
+        "ticket_numbers": [
+          "INC100003",
+          "INC100041",
+          "INC100049",
+          "INC100050",
+          "INC100063",
+          "INC100117",
+          "INC100133",
+          "INC100141",
+          "INC100169",
+          "INC100170",
+          "INC100175",
+          "INC100179",
+          "INC100193"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 4,
+          "P3": 6,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "VPN Gateway",
+          "HR Platform",
+          "Finance System"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "api-gateway",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "Database Team",
+          "DevOps",
+          "Security Operations"
+        ],
+        "state_dist": {
+          "Resolved": 6,
+          "Closed": 4,
+          "New": 1,
+          "On Hold": 1,
+          "In Progress": 1
+        },
+        "avg_mttr_hours": 14.2,
+        "first_seen": "2025-11-30 14:23:57.772343+00:00",
+        "last_seen": "2026-02-16 09:37:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Storage & Backup"
+      },
+      {
+        "id": 1,
+        "label": "Vpn Connectivity / Vpn Issues",
+        "keywords": [
+          "vpn connectivity",
+          "vpn",
+          "remote",
+          "dropped",
+          "connectivity dropped",
+          "connectivity"
+        ],
+        "size": 12,
+        "ticket_numbers": [
+          "INC100001",
+          "INC100013",
+          "INC100019",
+          "INC100079",
+          "INC100092",
+          "INC100132",
+          "INC100171",
+          "INC100198",
+          "INC100199",
+          "INC100205",
+          "INC100224",
+          "INC100233"
+        ],
+        "priority_dist": {
+          "P1": 3,
+          "P2": 4,
+          "P3": 4,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Finance System",
+          "API Gateway",
+          "VPN Gateway"
+        ],
+        "top_cis": [
+          "vpn-gw-01",
+          "app-server-cluster",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "Cloud Operations",
+          "Infrastructure",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Resolved": 4,
+          "On Hold": 3,
+          "Closed": 3,
+          "New": 2
+        },
+        "avg_mttr_hours": 12.8,
+        "first_seen": "2025-11-29 20:23:57.772343+00:00",
+        "last_seen": "2026-02-25 14:56:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 7,
+        "label": "Users Unable / Users Issues",
+        "keywords": [
+          "users unable",
+          "users",
+          "unable send",
+          "smtp relay",
+          "unable",
+          "smtp"
+        ],
+        "size": 12,
+        "ticket_numbers": [
+          "INC100012",
+          "INC100029",
+          "INC100046",
+          "INC100067",
+          "INC100077",
+          "INC100082",
+          "INC100103",
+          "INC100109",
+          "INC100147",
+          "INC100167",
+          "INC100178",
+          "INC100225"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 4,
+          "P3": 3,
+          "P4": 3,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Core Network",
+          "CI/CD Pipeline",
+          "API Gateway"
+        ],
+        "top_cis": [
+          "vpn-gw-01",
+          "web-lb-01",
+          "k8s-worker-pool"
+        ],
+        "top_groups": [
+          "DevOps",
+          "Infrastructure",
+          "Cloud Operations"
+        ],
+        "state_dist": {
+          "Closed": 6,
+          "In Progress": 2,
+          "Resolved": 2,
+          "On Hold": 1,
+          "New": 1
+        },
+        "avg_mttr_hours": 22.6,
+        "first_seen": "2025-11-29 01:37:57.772343+00:00",
+        "last_seen": "2026-02-15 08:51:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Email & Communication"
+      },
+      {
+        "id": 13,
+        "label": "Warnings / Https Issues",
+        "keywords": [
+          "warnings",
+          "https",
+          "https certificate",
+          "certificate expired",
+          "expired",
+          "expired causing"
+        ],
+        "size": 11,
+        "ticket_numbers": [
+          "INC100022",
+          "INC100064",
+          "INC100076",
+          "INC100081",
+          "INC100104",
+          "INC100180",
+          "INC100182",
+          "INC100208",
+          "INC100210",
+          "INC100212",
+          "INC100239"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 6,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Customer Portal",
+          "CI/CD Pipeline",
+          "HR Platform"
+        ],
+        "top_cis": [
+          "nas-01",
+          "api-gateway",
+          "app-server-cluster"
+        ],
+        "top_groups": [
+          "App Support",
+          "DevOps",
+          "Security Operations"
+        ],
+        "state_dist": {
+          "Resolved": 4,
+          "Closed": 2,
+          "New": 2,
+          "In Progress": 2,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 15.9,
+        "first_seen": "2025-12-02 11:01:57.772343+00:00",
+        "last_seen": "2026-02-20 17:24:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Application"
+      },
+      {
+        "id": 18,
+        "label": "Upload Service / Upload Issues",
+        "keywords": [
+          "upload service",
+          "upload",
+          "returning 507",
+          "storage",
+          "service returning",
+          "returning"
+        ],
+        "size": 9,
+        "ticket_numbers": [
+          "INC100039",
+          "INC100083",
+          "INC100085",
+          "INC100135",
+          "INC100140",
+          "INC100146",
+          "INC100162",
+          "INC100177",
+          "INC100194"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 1,
+          "P3": 2,
+          "P4": 4,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "Core Network",
+          "Email & Messaging"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "smtp-relay",
+          "prod-db-01"
+        ],
+        "top_groups": [
+          "Helpdesk",
+          "Database Team",
+          "Cloud Operations"
+        ],
+        "state_dist": {
+          "Closed": 3,
+          "New": 3,
+          "Resolved": 1,
+          "In Progress": 1,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 13.7,
+        "first_seen": "2025-12-12 08:12:57.772343+00:00",
+        "last_seen": "2026-02-26 07:51:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Application"
+      },
+      {
+        "id": 36,
+        "label": "Resolver Cluster / Resolver Issues",
+        "keywords": [
+          "resolver cluster",
+          "resolver",
+          "migration resolver",
+          "migration",
+          "dns migration",
+          "dns"
+        ],
+        "size": 9,
+        "ticket_numbers": [
+          "CHG200013",
+          "CHG200014",
+          "CHG200016",
+          "CHG200027",
+          "CHG200034",
+          "CHG200046",
+          "CHG200049",
+          "CHG200051",
+          "CHG200057"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 9,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "CI/CD Pipeline",
+          "HR Platform",
+          "Email & Messaging"
+        ],
+        "top_cis": [
+          "web-lb-01",
+          "k8s-worker-pool",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "App Support",
+          "Network Operations",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Closed": 7,
+          "In Progress": 2
+        },
+        "avg_mttr_hours": 3.8,
+        "first_seen": "2025-12-05 03:04:57.772343+00:00",
+        "last_seen": "2026-02-27 05:04:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 12,
+        "label": "Service Portal / Password Issues",
+        "keywords": [
+          "service portal",
+          "password",
+          "service",
+          "self service",
+          "self",
+          "returning"
+        ],
+        "size": 8,
+        "ticket_numbers": [
+          "INC100018",
+          "INC100044",
+          "INC100066",
+          "INC100120",
+          "INC100154",
+          "INC100159",
+          "INC100161",
+          "INC100192"
+        ],
+        "priority_dist": {
+          "P1": 3,
+          "P2": 3,
+          "P3": 2,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "API Gateway",
+          "HR Platform",
+          "Finance System"
+        ],
+        "top_cis": [
+          "k8s-worker-pool",
+          "smtp-relay",
+          "vpn-gw-01"
+        ],
+        "top_groups": [
+          "DevOps",
+          "Infrastructure",
+          "Cloud Operations"
+        ],
+        "state_dist": {
+          "Resolved": 4,
+          "Closed": 4
+        },
+        "avg_mttr_hours": 6.8,
+        "first_seen": "2025-12-14 08:33:57.772343+00:00",
+        "last_seen": "2026-02-27 05:45:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Access & Identity"
+      },
+      {
+        "id": 20,
+        "label": "Service Outage / Production Deployment Issues",
+        "keywords": [
+          "service outage",
+          "production deployment",
+          "service",
+          "production",
+          "minute",
+          "minute service"
+        ],
+        "size": 8,
+        "ticket_numbers": [
+          "INC100043",
+          "INC100091",
+          "INC100097",
+          "INC100098",
+          "INC100108",
+          "INC100137",
+          "INC100155",
+          "INC100187"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 3,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Customer Portal",
+          "VPN Gateway",
+          "Core Network"
+        ],
+        "top_cis": [
+          "smtp-relay",
+          "vpn-gw-01",
+          "dns-resolver"
+        ],
+        "top_groups": [
+          "DevOps",
+          "App Support",
+          "Security Operations"
+        ],
+        "state_dist": {
+          "Resolved": 3,
+          "On Hold": 2,
+          "In Progress": 2,
+          "Closed": 1
+        },
+        "avg_mttr_hours": 3.2,
+        "first_seen": "2025-12-01 10:57:57.772343+00:00",
+        "last_seen": "2026-02-07 22:56:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Stable",
+        "category": "Application"
+      },
+      {
+        "id": 9,
+        "label": "Ssl Handshake / Returning Ssl Issues",
+        "keywords": [
+          "ssl handshake",
+          "returning ssl",
+          "ssl",
+          "returning",
+          "api",
+          "api gateway"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "INC100015",
+          "INC100094",
+          "INC100111",
+          "INC100121",
+          "INC100125",
+          "INC100181",
+          "INC100183"
+        ],
+        "priority_dist": {
+          "P1": 3,
+          "P2": 2,
+          "P3": 2,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "HR Platform",
+          "Finance System",
+          "API Gateway"
+        ],
+        "top_cis": [
+          "nas-01",
+          "smtp-relay",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "Infrastructure",
+          "DevOps",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Resolved": 3,
+          "On Hold": 2,
+          "Closed": 2
+        },
+        "avg_mttr_hours": 7.7,
+        "first_seen": "2025-12-23 16:58:57.772343+00:00",
+        "last_seen": "2026-02-20 08:23:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Application"
+      },
+      {
+        "id": 14,
+        "label": "Time Exceeding / 10 Issues",
+        "keywords": [
+          "time exceeding",
+          "10",
+          "time",
+          "seconds",
+          "response time",
+          "response"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "INC100023",
+          "INC100027",
+          "INC100058",
+          "INC100060",
+          "INC100088",
+          "INC100089",
+          "INC100100"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 4,
+          "P3": 1,
+          "P4": 2,
+          "Unknown": 0
+        },
+        "top_services": [
+          "CI/CD Pipeline",
+          "Core Network",
+          "Data Warehouse"
+        ],
+        "top_cis": [
+          "vpn-gw-01",
+          "auth-service",
+          "nas-01"
+        ],
+        "top_groups": [
+          "DevOps",
+          "Infrastructure",
+          "Database Team"
+        ],
+        "state_dist": {
+          "Closed": 3,
+          "Resolved": 2,
+          "On Hold": 2
+        },
+        "avg_mttr_hours": 23.1,
+        "first_seen": "2025-12-22 09:36:57.772343+00:00",
+        "last_seen": "2026-02-10 13:01:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Increasing",
+        "category": "Performance"
+      },
+      {
+        "id": 21,
+        "label": "Database / Pool Issues",
+        "keywords": [
+          "database",
+          "pool",
+          "exhausted",
+          "pool exhausted",
+          "connection",
+          "database connection"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "INC100047",
+          "INC100061",
+          "INC100093",
+          "INC100119",
+          "INC100150",
+          "INC100206",
+          "INC100235"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 5,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "HR Platform",
+          "Finance System",
+          "CI/CD Pipeline"
+        ],
+        "top_cis": [
+          "smtp-relay",
+          "k8s-worker-pool",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "Network Operations",
+          "Database Team",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "In Progress": 3,
+          "Resolved": 3,
+          "Closed": 1
+        },
+        "avg_mttr_hours": 27.0,
+        "first_seen": "2025-12-06 21:19:57.772343+00:00",
+        "last_seen": "2026-02-23 22:01:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Database"
+      },
+      {
+        "id": 22,
+        "label": "Oracle Deadlock / Oracle Issues",
+        "keywords": [
+          "oracle deadlock",
+          "oracle",
+          "logs",
+          "deadlock errors",
+          "deadlock",
+          "errors application"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "INC100052",
+          "INC100071",
+          "INC100084",
+          "INC100090",
+          "INC100115",
+          "INC100136",
+          "INC100168"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 2,
+          "P3": 3,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "Core Network",
+          "Finance System"
+        ],
+        "top_cis": [
+          "k8s-worker-pool",
+          "vpn-gw-01",
+          "dns-resolver"
+        ],
+        "top_groups": [
+          "DevOps",
+          "Helpdesk",
+          "Infrastructure"
+        ],
+        "state_dist": {
+          "New": 3,
+          "Resolved": 2,
+          "Closed": 2
+        },
+        "avg_mttr_hours": 16.0,
+        "first_seen": "2025-12-13 20:03:57.772343+00:00",
+        "last_seen": "2026-02-25 07:30:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Database"
+      },
+      {
+        "id": 32,
+        "label": "Mfa All / Mfa Issues",
+        "keywords": [
+          "mfa all",
+          "mfa",
+          "enable mfa",
+          "enable",
+          "all admin",
+          "all"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "CHG200005",
+          "CHG200006",
+          "CHG200021",
+          "CHG200025",
+          "CHG200036",
+          "CHG200044",
+          "CHG200056"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 7,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Data Warehouse",
+          "HR Platform",
+          "Core Network"
+        ],
+        "top_cis": [
+          "smtp-relay",
+          "prod-db-01",
+          "app-server-cluster"
+        ],
+        "top_groups": [
+          "Database Team",
+          "App Support",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "Closed": 5,
+          "In Progress": 2
+        },
+        "avg_mttr_hours": 4.6,
+        "first_seen": "2025-12-15 10:04:57.772343+00:00",
+        "last_seen": "2026-02-25 08:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Security"
+      },
+      {
+        "id": 38,
+        "label": "Renewal / Quarterly Certificate Issues",
+        "keywords": [
+          "renewal",
+          "quarterly certificate",
+          "certificate renewal",
+          "quarterly",
+          "certificate",
+          "renewal quarterly"
+        ],
+        "size": 7,
+        "ticket_numbers": [
+          "CHG200028",
+          "CHG200029",
+          "CHG200032",
+          "CHG200041",
+          "CHG200052",
+          "CHG200054",
+          "CHG200055"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 7,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Email & Messaging",
+          "ERP System",
+          "CI/CD Pipeline"
+        ],
+        "top_cis": [
+          "web-lb-01",
+          "nas-01",
+          "auth-service"
+        ],
+        "top_groups": [
+          "Network Operations",
+          "App Support",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Closed": 4,
+          "In Progress": 3
+        },
+        "avg_mttr_hours": 4.0,
+        "first_seen": "2025-12-07 15:04:57.772343+00:00",
+        "last_seen": "2026-02-06 03:04:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Increasing",
+        "category": "Security"
+      },
+      {
+        "id": 11,
+        "label": "Service / Tls Errors Issues",
+        "keywords": [
+          "service",
+          "tls errors",
+          "tls",
+          "service tls",
+          "service service",
+          "internal service"
+        ],
+        "size": 6,
+        "ticket_numbers": [
+          "INC100017",
+          "INC100048",
+          "INC100188",
+          "INC100191",
+          "INC100207",
+          "INC100223"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 3,
+          "P3": 2,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "VPN Gateway",
+          "API Gateway",
+          "Data Warehouse"
+        ],
+        "top_cis": [
+          "web-lb-01",
+          "nas-01",
+          "vpn-gw-01"
+        ],
+        "top_groups": [
+          "Database Team",
+          "Security Operations",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "Closed": 4,
+          "In Progress": 1,
+          "Resolved": 1
+        },
+        "avg_mttr_hours": 17.4,
+        "first_seen": "2025-12-20 13:05:57.772343+00:00",
+        "last_seen": "2026-02-01 20:28:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Security"
+      },
+      {
+        "id": 15,
+        "label": "Pagerduty Alert / Threshold Issues",
+        "keywords": [
+          "pagerduty alert",
+          "threshold",
+          "storm misconfigured",
+          "pagerduty",
+          "storm",
+          "misconfigured"
+        ],
+        "size": 6,
+        "ticket_numbers": [
+          "INC100031",
+          "INC100130",
+          "INC100134",
+          "INC100144",
+          "INC100214",
+          "INC100221"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 0,
+          "P3": 4,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "API Gateway",
+          "Core Network",
+          "VPN Gateway"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "auth-service",
+          "nas-01"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Cloud Operations",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Closed": 3,
+          "Resolved": 2,
+          "New": 1
+        },
+        "avg_mttr_hours": 20.0,
+        "first_seen": "2026-01-08 11:38:57.772343+00:00",
+        "last_seen": "2026-02-22 12:13:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Monitoring & Alerting"
+      },
+      {
+        "id": 16,
+        "label": "Resolution Failures / Resolution Issues",
+        "keywords": [
+          "resolution failures",
+          "resolution",
+          "internal domains",
+          "internal",
+          "domains",
+          "dns resolution"
+        ],
+        "size": 6,
+        "ticket_numbers": [
+          "INC100032",
+          "INC100142",
+          "INC100143",
+          "INC100160",
+          "INC100195",
+          "INC100228"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 2,
+          "P3": 2,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Finance System",
+          "Core Network",
+          "Data Warehouse"
+        ],
+        "top_cis": [
+          "nas-01",
+          "k8s-worker-pool",
+          "auth-service"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "Network Operations",
+          "Security Operations"
+        ],
+        "state_dist": {
+          "Closed": 3,
+          "Resolved": 2,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 23.9,
+        "first_seen": "2025-12-02 06:07:57.772343+00:00",
+        "last_seen": "2026-02-22 08:38:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 25,
+        "label": "Network / Vpn Home Issues",
+        "keywords": [
+          "network",
+          "vpn home",
+          "users unable",
+          "users",
+          "unable",
+          "unable connect"
+        ],
+        "size": 6,
+        "ticket_numbers": [
+          "INC100086",
+          "INC100145",
+          "INC100216",
+          "INC100220",
+          "INC100229",
+          "INC100230"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 2,
+          "P3": 1,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Core Network",
+          "VPN Gateway",
+          "Finance System"
+        ],
+        "top_cis": [
+          "web-lb-01",
+          "vpn-gw-01",
+          "k8s-worker-pool"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "App Support",
+          "Security Operations"
+        ],
+        "state_dist": {
+          "Closed": 2,
+          "Resolved": 2,
+          "New": 1,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 4.7,
+        "first_seen": "2025-12-02 06:57:57.772343+00:00",
+        "last_seen": "2026-02-18 03:44:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 4,
+        "label": "Sync Failing / Outlook Calendar Issues",
+        "keywords": [
+          "sync failing",
+          "outlook calendar",
+          "sync",
+          "mobile devices",
+          "outlook",
+          "failing mobile"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "INC100005",
+          "INC100008",
+          "INC100112",
+          "INC100203",
+          "INC100236"
+        ],
+        "priority_dist": {
+          "P1": 4,
+          "P2": 1,
+          "P3": 0,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Finance System",
+          "HR Platform",
+          "CI/CD Pipeline"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "vpn-gw-01",
+          "app-server-cluster"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "Infrastructure",
+          "DevOps"
+        ],
+        "state_dist": {
+          "Resolved": 2,
+          "New": 1,
+          "Closed": 1,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 0.8,
+        "first_seen": "2025-12-15 17:42:57.772343+00:00",
+        "last_seen": "2026-02-09 16:06:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Email & Communication"
+      },
+      {
+        "id": 5,
+        "label": "Network / Spike Causing Issues",
+        "keywords": [
+          "network",
+          "spike causing",
+          "timeouts",
+          "spike",
+          "application timeouts",
+          "causing application"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "INC100009",
+          "INC100010",
+          "INC100056",
+          "INC100139",
+          "INC100232"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "VPN Gateway",
+          "Finance System",
+          "Customer Portal"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "prod-db-01",
+          "vpn-gw-01"
+        ],
+        "top_groups": [
+          "Infrastructure",
+          "DevOps",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "Closed": 2,
+          "Resolved": 1,
+          "In Progress": 1,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 6.0,
+        "first_seen": "2026-01-02 06:39:57.772343+00:00",
+        "last_seen": "2026-02-26 10:44:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Network"
+      },
+      {
+        "id": 6,
+        "label": "Returning Data / Returning Issues",
+        "keywords": [
+          "returning data",
+          "returning",
+          "restart",
+          "prometheus",
+          "prometheus restart",
+          "dashboards"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "INC100011",
+          "INC100025",
+          "INC100163",
+          "INC100174",
+          "INC100185"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Data Warehouse",
+          "Core Network",
+          "VPN Gateway"
+        ],
+        "top_cis": [
+          "api-gateway",
+          "web-lb-01",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Network Operations",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "Resolved": 2,
+          "Closed": 2,
+          "New": 1
+        },
+        "avg_mttr_hours": 9.4,
+        "first_seen": "2025-12-08 08:37:57.772343+00:00",
+        "last_seen": "2025-12-27 19:53:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Increasing",
+        "category": "Monitoring & Alerting"
+      },
+      {
+        "id": 26,
+        "label": "Worker Nodes / Worker Issues",
+        "keywords": [
+          "worker nodes",
+          "worker",
+          "saturation worker",
+          "saturation",
+          "queue",
+          "queue backlog"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "INC100110",
+          "INC100122",
+          "INC100156",
+          "INC100173",
+          "INC100186"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 0,
+          "P3": 2,
+          "P4": 2,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Email & Messaging",
+          "Core Network",
+          "ERP System"
+        ],
+        "top_cis": [
+          "web-lb-01",
+          "vpn-gw-01",
+          "auth-service"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Identity & Access",
+          "Cloud Operations"
+        ],
+        "state_dist": {
+          "Resolved": 2,
+          "Closed": 2,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 5.1,
+        "first_seen": "2026-01-12 02:05:57.772343+00:00",
+        "last_seen": "2026-02-24 01:10:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Performance"
+      },
+      {
+        "id": 28,
+        "label": "Service / Rollback Auth Issues",
+        "keywords": [
+          "service",
+          "rollback auth",
+          "rollback",
+          "emergency rollback",
+          "auth service",
+          "emergency"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "CHG200000",
+          "CHG200018",
+          "CHG200022",
+          "CHG200024",
+          "CHG200058"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "VPN Gateway",
+          "Email & Messaging",
+          "HR Platform"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "web-lb-01",
+          "nas-01"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "Security Operations",
+          "App Support"
+        ],
+        "state_dist": {
+          "Closed": 5
+        },
+        "avg_mttr_hours": 3.4,
+        "first_seen": "2025-12-01 08:04:57.772343+00:00",
+        "last_seen": "2026-02-15 03:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Application"
+      },
+      {
+        "id": 30,
+        "label": "System Cve / System Issues",
+        "keywords": [
+          "system cve",
+          "system",
+          "patch operating",
+          "patch",
+          "operating system",
+          "operating"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "CHG200002",
+          "CHG200004",
+          "CHG200017",
+          "CHG200039",
+          "CHG200053"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "VPN Gateway",
+          "Core Network"
+        ],
+        "top_cis": [
+          "prod-db-01",
+          "vpn-gw-01",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "App Support",
+          "Identity & Access",
+          "Database Team"
+        ],
+        "state_dist": {
+          "Closed": 4,
+          "In Progress": 1
+        },
+        "avg_mttr_hours": 2.8,
+        "first_seen": "2025-12-07 12:04:57.772343+00:00",
+        "last_seen": "2026-02-19 11:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Security"
+      },
+      {
+        "id": 33,
+        "label": "V2 / Release V2 Issues",
+        "keywords": [
+          "v2",
+          "release v2",
+          "release",
+          "deploy application",
+          "application release",
+          "deploy"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "CHG200008",
+          "CHG200012",
+          "CHG200031",
+          "CHG200042",
+          "CHG200045"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Customer Portal",
+          "Core Network",
+          "CI/CD Pipeline"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "k8s-worker-pool",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "App Support",
+          "Cloud Operations",
+          "Database Team"
+        ],
+        "state_dist": {
+          "In Progress": 3,
+          "Closed": 2
+        },
+        "avg_mttr_hours": 5.0,
+        "first_seen": "2025-12-01 18:04:57.772343+00:00",
+        "last_seen": "2026-02-24 00:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Application"
+      },
+      {
+        "id": 35,
+        "label": "Rule Ddos / Rule Issues",
+        "keywords": [
+          "rule ddos",
+          "rule",
+          "mitigation",
+          "firewall rule",
+          "firewall",
+          "emergency firewall"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "CHG200010",
+          "CHG200023",
+          "CHG200026",
+          "CHG200037",
+          "CHG200047"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Email & Messaging",
+          "API Gateway",
+          "HR Platform"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "web-lb-01",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Cloud Operations",
+          "DevOps"
+        ],
+        "state_dist": {
+          "Closed": 5
+        },
+        "avg_mttr_hours": 4.2,
+        "first_seen": "2025-12-12 11:04:57.772343+00:00",
+        "last_seen": "2026-02-14 23:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Network"
+      },
+      {
+        "id": 37,
+        "label": "Volume 2Tb / Volume Issues",
+        "keywords": [
+          "volume 2tb",
+          "volume",
+          "storage volume",
+          "storage",
+          "nas storage",
+          "nas"
+        ],
+        "size": 5,
+        "ticket_numbers": [
+          "CHG200015",
+          "CHG200035",
+          "CHG200038",
+          "CHG200040",
+          "CHG200059"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 5,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Finance System",
+          "HR Platform",
+          "Email & Messaging"
+        ],
+        "top_cis": [
+          "vpn-gw-01",
+          "k8s-worker-pool",
+          "nas-01"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Database Team",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "In Progress": 3,
+          "Closed": 2
+        },
+        "avg_mttr_hours": 5.2,
+        "first_seen": "2025-12-07 20:04:57.772343+00:00",
+        "last_seen": "2026-01-04 18:04:57.772343+00:00",
+        "recurrence": "Multiple times per week",
+        "trend": "Increasing",
+        "category": "Infrastructure"
+      },
+      {
+        "id": 23,
+        "label": "Usage Api / Usage Issues",
+        "keywords": [
+          "usage api",
+          "usage",
+          "servers 95",
+          "oom kill",
+          "servers",
+          "observed"
+        ],
+        "size": 4,
+        "ticket_numbers": [
+          "INC100057",
+          "INC100118",
+          "INC100158",
+          "INC100202"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 0,
+          "P3": 3,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "HR Platform",
+          "ERP System",
+          "API Gateway"
+        ],
+        "top_cis": [
+          "app-server-cluster",
+          "api-gateway",
+          "web-lb-01"
+        ],
+        "top_groups": [
+          "Security Operations",
+          "Network Operations",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "Resolved": 2,
+          "Closed": 1,
+          "On Hold": 1
+        },
+        "avg_mttr_hours": 24.5,
+        "first_seen": "2025-12-04 23:37:57.772343+00:00",
+        "last_seen": "2026-02-19 11:42:57.772343+00:00",
+        "recurrence": "Monthly or less",
+        "trend": "Stable",
+        "category": "Infrastructure"
+      },
+      {
+        "id": 24,
+        "label": "Sso Service / Sso Issues",
+        "keywords": [
+          "sso service",
+          "sso",
+          "service returning",
+          "service",
+          "returning 403",
+          "returning"
+        ],
+        "size": 4,
+        "ticket_numbers": [
+          "INC100078",
+          "INC100105",
+          "INC100153",
+          "INC100189"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 1,
+          "P3": 2,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_services": [
+          "VPN Gateway",
+          "API Gateway",
+          "Finance System"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "app-server-cluster",
+          "prod-db-01"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "DevOps",
+          "Database Team"
+        ],
+        "state_dist": {
+          "New": 1,
+          "On Hold": 1,
+          "Resolved": 1,
+          "Closed": 1
+        },
+        "avg_mttr_hours": 38.0,
+        "first_seen": "2025-12-01 02:24:57.772343+00:00",
+        "last_seen": "2026-01-18 09:20:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Access & Identity"
+      },
+      {
+        "id": 29,
+        "label": "Version 14 / Version Issues",
+        "keywords": [
+          "version 14",
+          "version",
+          "upgrade database",
+          "upgrade",
+          "database version",
+          "database"
+        ],
+        "size": 4,
+        "ticket_numbers": [
+          "CHG200001",
+          "CHG200030",
+          "CHG200033",
+          "CHG200050"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "Finance System",
+          "Data Warehouse",
+          "HR Platform"
+        ],
+        "top_cis": [
+          "dns-resolver",
+          "smtp-relay",
+          "nas-01"
+        ],
+        "top_groups": [
+          "App Support",
+          "DevOps",
+          "Infrastructure"
+        ],
+        "state_dist": {
+          "Closed": 3,
+          "In Progress": 1
+        },
+        "avg_mttr_hours": 4.8,
+        "first_seen": "2025-11-29 12:04:57.772343+00:00",
+        "last_seen": "2026-02-06 12:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Database"
+      },
+      {
+        "id": 31,
+        "label": "Third Party / Third Issues",
+        "keywords": [
+          "third party",
+          "third",
+          "rotate api",
+          "rotate",
+          "party integrations",
+          "party"
+        ],
+        "size": 4,
+        "ticket_numbers": [
+          "CHG200003",
+          "CHG200007",
+          "CHG200020",
+          "CHG200043"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "Customer Portal",
+          "HR Platform"
+        ],
+        "top_cis": [
+          "k8s-worker-pool",
+          "app-server-cluster",
+          "api-gateway"
+        ],
+        "top_groups": [
+          "Identity & Access",
+          "Cloud Operations",
+          "Helpdesk"
+        ],
+        "state_dist": {
+          "In Progress": 2,
+          "Closed": 2
+        },
+        "avg_mttr_hours": 4.0,
+        "first_seen": "2026-01-25 03:04:57.772343+00:00",
+        "last_seen": "2026-02-19 04:04:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Stable",
+        "category": "Security"
+      },
+      {
+        "id": 34,
+        "label": "Subnet / Server Subnet Issues",
+        "keywords": [
+          "subnet",
+          "server subnet",
+          "server",
+          "rule server",
+          "firewall rule",
+          "rule"
+        ],
+        "size": 4,
+        "ticket_numbers": [
+          "CHG200009",
+          "CHG200011",
+          "CHG200019",
+          "CHG200048"
+        ],
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 4,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "API Gateway",
+          "CI/CD Pipeline",
+          "Core Network"
+        ],
+        "top_cis": [
+          "smtp-relay",
+          "dns-resolver",
+          "app-server-cluster"
+        ],
+        "top_groups": [
+          "Cloud Operations",
+          "Security Operations",
+          "Infrastructure"
+        ],
+        "state_dist": {
+          "Closed": 2,
+          "In Progress": 2
+        },
+        "avg_mttr_hours": 3.0,
+        "first_seen": "2025-12-27 04:04:57.772343+00:00",
+        "last_seen": "2026-02-21 17:04:57.772343+00:00",
+        "recurrence": "Multiple times per day",
+        "trend": "Stable",
+        "category": "Network"
+      },
+      {
+        "id": 19,
+        "label": "Wrong Environment / Wrong Issues",
+        "keywords": [
+          "wrong environment",
+          "wrong",
+          "pushed wrong",
+          "pushed",
+          "configuration pushed",
+          "configuration"
+        ],
+        "size": 3,
+        "ticket_numbers": [
+          "INC100042",
+          "INC100059",
+          "INC100116"
+        ],
+        "priority_dist": {
+          "P1": 2,
+          "P2": 1,
+          "P3": 0,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "VPN Gateway"
+        ],
+        "top_cis": [
+          "prod-db-01",
+          "dns-resolver",
+          "app-server-cluster"
+        ],
+        "top_groups": [
+          "Network Operations",
+          "Security Operations",
+          "Identity & Access"
+        ],
+        "state_dist": {
+          "Resolved": 1,
+          "On Hold": 1,
+          "Closed": 1
+        },
+        "avg_mttr_hours": 9.2,
+        "first_seen": "2025-12-07 17:41:57.772343+00:00",
+        "last_seen": "2026-01-04 21:11:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Infrastructure"
+      },
+      {
+        "id": 27,
+        "label": "Pod Crash / Loop After Issues",
+        "keywords": [
+          "pod crash",
+          "loop after",
+          "pod",
+          "kubernetes pod",
+          "loop",
+          "after"
+        ],
+        "size": 3,
+        "ticket_numbers": [
+          "INC100176",
+          "INC100231",
+          "INC100238"
+        ],
+        "priority_dist": {
+          "P1": 1,
+          "P2": 1,
+          "P3": 1,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_services": [
+          "ERP System",
+          "CI/CD Pipeline",
+          "Finance System"
+        ],
+        "top_cis": [
+          "api-gateway",
+          "prod-db-01",
+          "smtp-relay"
+        ],
+        "top_groups": [
+          "Database Team",
+          "App Support"
+        ],
+        "state_dist": {
+          "Closed": 2,
+          "Resolved": 1
+        },
+        "avg_mttr_hours": 7.6,
+        "first_seen": "2025-12-28 22:02:57.772343+00:00",
+        "last_seen": "2026-02-25 03:52:57.772343+00:00",
+        "recurrence": "Weekly",
+        "trend": "Increasing",
+        "category": "Application"
+      }
+    ],
+    "noise_count": 0,
+    "total_tickets": 300
+  },
+  "root_causes": {
+    "root_causes": [
+      {
+        "id": 1,
+        "label": "Successfully / Completed Successfully",
+        "keywords": [
+          "successfully",
+          "completed successfully",
+          "completed"
+        ],
+        "ticket_count": 60,
+        "priority_dist": {
+          "P1": 0,
+          "P2": 0,
+          "P3": 60,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "App Support",
+          "Identity & Access"
+        ],
+        "avg_mttr_hours": 4.1,
+        "linked_patterns": [
+          {
+            "pattern_id": 36,
+            "pattern_label": "Resolver Cluster / Resolver Issues",
+            "shared_tickets": 9
+          },
+          {
+            "pattern_id": 32,
+            "pattern_label": "Mfa All / Mfa Issues",
+            "shared_tickets": 7
+          },
+          {
+            "pattern_id": 38,
+            "pattern_label": "Renewal / Quarterly Certificate Issues",
+            "shared_tickets": 7
+          },
+          {
+            "pattern_id": 28,
+            "pattern_label": "Service / Rollback Auth Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 30,
+            "pattern_label": "System Cve / System Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 33,
+            "pattern_label": "V2 / Release V2 Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 35,
+            "pattern_label": "Rule Ddos / Rule Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 37,
+            "pattern_label": "Volume 2Tb / Volume Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 29,
+            "pattern_label": "Version 14 / Version Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 31,
+            "pattern_label": "Third Party / Third Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 34,
+            "pattern_label": "Subnet / Server Subnet Issues",
+            "shared_tickets": 4
+          }
+        ],
+        "recommendations": [
+          "Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs."
+        ],
+        "sample_resolutions": [
+          "Change completed successfully.",
+          "Change completed successfully.",
+          "Change completed successfully."
+        ]
+      },
+      {
+        "id": 3,
+        "label": "Firewall / Updated",
+        "keywords": [
+          "firewall",
+          "updated",
+          "firewall rule",
+          "rule",
+          "updated firewall",
+          "after"
+        ],
+        "ticket_count": 41,
+        "priority_dist": {
+          "P1": 11,
+          "P2": 12,
+          "P3": 11,
+          "P4": 7,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "DevOps",
+          "Cloud Operations"
+        ],
+        "avg_mttr_hours": 13.9,
+        "linked_patterns": [
+          {
+            "pattern_id": 1,
+            "pattern_label": "Vpn Connectivity / Vpn Issues",
+            "shared_tickets": 7
+          },
+          {
+            "pattern_id": 7,
+            "pattern_label": "Users Unable / Users Issues",
+            "shared_tickets": 6
+          },
+          {
+            "pattern_id": 18,
+            "pattern_label": "Upload Service / Upload Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 20,
+            "pattern_label": "Service Outage / Production Deployment Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 15,
+            "pattern_label": "Pagerduty Alert / Threshold Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 16,
+            "pattern_label": "Resolution Failures / Resolution Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 25,
+            "pattern_label": "Network / Vpn Home Issues",
+            "shared_tickets": 1
+          },
+          {
+            "pattern_id": 4,
+            "pattern_label": "Sync Failing / Outlook Calendar Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 5,
+            "pattern_label": "Network / Spike Causing Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 23,
+            "pattern_label": "Usage Api / Usage Issues",
+            "shared_tickets": 1
+          },
+          {
+            "pattern_id": 24,
+            "pattern_label": "Sso Service / Sso Issues",
+            "shared_tickets": 2
+          },
+          {
+            "pattern_id": 19,
+            "pattern_label": "Wrong Environment / Wrong Issues",
+            "shared_tickets": 2
+          },
+          {
+            "pattern_id": 27,
+            "pattern_label": "Pod Crash / Loop After Issues",
+            "shared_tickets": 2
+          }
+        ],
+        "recommendations": [
+          "Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.",
+          "Enforce canary/blue-green deployments and automated rollback triggers for failed health checks."
+        ],
+        "sample_resolutions": [
+          "Re-enrolled devices in MDM and reset Exchange ActiveSync",
+          "Identified BGP route flapping; stabilised routing",
+          "Firewall rule not updated after email server migration Updated firewall rule to allow SMTP from new server subnet"
+        ]
+      },
+      {
+        "id": 7,
+        "label": "Leak / Vpn",
+        "keywords": [
+          "leak",
+          "vpn",
+          "gateway",
+          "memory leak",
+          "memory",
+          "firmware"
+        ],
+        "ticket_count": 22,
+        "priority_dist": {
+          "P1": 5,
+          "P2": 6,
+          "P3": 10,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "Database Team",
+          "Helpdesk"
+        ],
+        "avg_mttr_hours": 13.0,
+        "linked_patterns": [
+          {
+            "pattern_id": 10,
+            "pattern_label": "Reported / Vpn Disconnections Issues",
+            "shared_tickets": 9
+          },
+          {
+            "pattern_id": 9,
+            "pattern_label": "Ssl Handshake / Returning Ssl Issues",
+            "shared_tickets": 5
+          },
+          {
+            "pattern_id": 21,
+            "pattern_label": "Database / Pool Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 25,
+            "pattern_label": "Network / Vpn Home Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 23,
+            "pattern_label": "Usage Api / Usage Issues",
+            "shared_tickets": 1
+          }
+        ],
+        "recommendations": [
+          "Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts.",
+          "Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring."
+        ],
+        "sample_resolutions": [
+          "Memory leak in VPN gateway firmware v3.2.1",
+          "Memory leak in VPN gateway firmware v3.2.1 Upgraded VPN gateway firmware to resolve memory leak",
+          "Upgraded VPN gateway firmware to resolve memory leak"
+        ]
+      },
+      {
+        "id": 0,
+        "label": "System / Hr",
+        "keywords": [
+          "system",
+          "hr",
+          "hr system",
+          "reset",
+          "reset accounts",
+          "accounts"
+        ],
+        "ticket_count": 17,
+        "priority_dist": {
+          "P1": 1,
+          "P2": 8,
+          "P3": 7,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "Security Operations",
+          "App Support"
+        ],
+        "avg_mttr_hours": 15.6,
+        "linked_patterns": [
+          {
+            "pattern_id": 0,
+            "pattern_label": "Users Locked / Users Issues",
+            "shared_tickets": 17
+          }
+        ],
+        "recommendations": [
+          "Implement self-service password reset and proactive account expiry notifications."
+        ],
+        "sample_resolutions": [
+          "HR system de-provisioning job running with wrong OU filter Reset accounts and identified sync issue with HR system",
+          "Reset accounts and identified sync issue with HR system",
+          "HR system de-provisioning job running with wrong OU filter"
+        ]
+      },
+      {
+        "id": 4,
+        "label": "Log / Log Rotation",
+        "keywords": [
+          "log",
+          "log rotation",
+          "rotation",
+          "rotation frequency",
+          "old",
+          "old log"
+        ],
+        "ticket_count": 14,
+        "priority_dist": {
+          "P1": 2,
+          "P2": 8,
+          "P3": 3,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "Database Team",
+          "Infrastructure"
+        ],
+        "avg_mttr_hours": 9.8,
+        "linked_patterns": [
+          {
+            "pattern_id": 17,
+            "pattern_label": "Utilization 98 / Utilization Issues",
+            "shared_tickets": 10
+          },
+          {
+            "pattern_id": 11,
+            "pattern_label": "Service / Tls Errors Issues",
+            "shared_tickets": 4
+          }
+        ],
+        "recommendations": [],
+        "sample_resolutions": [
+          "Removed old log files and increased log rotation frequency",
+          "CA bundle not propagated after certificate authority rotation Re-distributed new CA bundle to all microservices",
+          "Log rotation policy misconfigured; logs not purged for 60 days Removed old log files and increased log rotation frequency"
+        ]
+      },
+      {
+        "id": 8,
+        "label": "Load / Load Balancer",
+        "keywords": [
+          "load",
+          "load balancer",
+          "balancer",
+          "certificate",
+          "url",
+          "ssl"
+        ],
+        "ticket_count": 13,
+        "priority_dist": {
+          "P1": 3,
+          "P2": 8,
+          "P3": 2,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "DevOps",
+          "Security Operations"
+        ],
+        "avg_mttr_hours": 9.4,
+        "linked_patterns": [
+          {
+            "pattern_id": 13,
+            "pattern_label": "Warnings / Https Issues",
+            "shared_tickets": 6
+          },
+          {
+            "pattern_id": 12,
+            "pattern_label": "Service Portal / Password Issues",
+            "shared_tickets": 7
+          }
+        ],
+        "recommendations": [
+          "Set up automated certificate expiry monitoring with alerts at 30/14/7 days before expiry."
+        ],
+        "sample_resolutions": [
+          "Fixed broken redirect URL after load balancer update",
+          "Renewed SSL certificate and deployed to load balancer",
+          "Load balancer SSL termination changed callback URL scheme"
+        ]
+      },
+      {
+        "id": 5,
+        "label": "Index / Query",
+        "keywords": [
+          "index",
+          "query",
+          "time",
+          "table query",
+          "reduced 45s",
+          "query time"
+        ],
+        "ticket_count": 12,
+        "priority_dist": {
+          "P1": 4,
+          "P2": 5,
+          "P3": 3,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "Network Operations",
+          "Database Team"
+        ],
+        "avg_mttr_hours": 6.0,
+        "linked_patterns": [
+          {
+            "pattern_id": 2,
+            "pattern_label": "Database / Severely Issues",
+            "shared_tickets": 9
+          },
+          {
+            "pattern_id": 8,
+            "pattern_label": "Database / Slow Issues",
+            "shared_tickets": 3
+          }
+        ],
+        "recommendations": [],
+        "sample_resolutions": [
+          "Rebuilt missing index on orders table; query time reduced from 45s to 0.3s",
+          "Ad-hoc reporting query without index caused full table scan",
+          "Index dropped accidentally during schema migration Rebuilt missing index on orders table; query time reduced from 45s to 0.3s"
+        ]
+      },
+      {
+        "id": 9,
+        "label": "Query / Optimised",
+        "keywords": [
+          "query",
+          "optimised",
+          "enabled",
+          "query patterns",
+          "query caching",
+          "caching optimised"
+        ],
+        "ticket_count": 12,
+        "priority_dist": {
+          "P1": 1,
+          "P2": 1,
+          "P3": 7,
+          "P4": 3,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "DevOps",
+          "Network Operations"
+        ],
+        "avg_mttr_hours": 12.0,
+        "linked_patterns": [
+          {
+            "pattern_id": 8,
+            "pattern_label": "Database / Slow Issues",
+            "shared_tickets": 1
+          },
+          {
+            "pattern_id": 14,
+            "pattern_label": "Time Exceeding / 10 Issues",
+            "shared_tickets": 4
+          },
+          {
+            "pattern_id": 6,
+            "pattern_label": "Returning Data / Returning Issues",
+            "shared_tickets": 3
+          },
+          {
+            "pattern_id": 26,
+            "pattern_label": "Worker Nodes / Worker Issues",
+            "shared_tickets": 4
+          }
+        ],
+        "recommendations": [],
+        "sample_resolutions": [
+          "Prometheus retention config wiped after upgrade Re-enabled remote write and fixed Prometheus retention config",
+          "Enabled query caching and optimised N+1 query patterns",
+          "Enabled query caching and optimised N+1 query patterns"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Volume / Backup",
+        "keywords": [
+          "volume",
+          "backup",
+          "volume sized",
+          "sized",
+          "sized growing",
+          "backup volume"
+        ],
+        "ticket_count": 10,
+        "priority_dist": {
+          "P1": 0,
+          "P2": 3,
+          "P3": 6,
+          "P4": 1,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "DevOps",
+          "Network Operations"
+        ],
+        "avg_mttr_hours": 14.2,
+        "linked_patterns": [
+          {
+            "pattern_id": 3,
+            "pattern_label": "Backup / Space Issues",
+            "shared_tickets": 10
+          }
+        ],
+        "recommendations": [
+          "Test backup restoration monthly, document RTO/RPO targets, and automate backup validation."
+        ],
+        "sample_resolutions": [
+          "Backup volume not sized for growing dataset Extended volume size and cleared orphaned backup files",
+          "Backup volume not sized for growing dataset Extended volume size and cleared orphaned backup files",
+          "Backup volume not sized for growing dataset Extended volume size and cleared orphaned backup files"
+        ]
+      },
+      {
+        "id": 6,
+        "label": "Order / Lock",
+        "keywords": [
+          "order",
+          "lock",
+          "stored",
+          "reviewed lock",
+          "transaction order",
+          "reviewed"
+        ],
+        "ticket_count": 4,
+        "priority_dist": {
+          "P1": 2,
+          "P2": 0,
+          "P3": 2,
+          "P4": 0,
+          "Unknown": 0
+        },
+        "top_groups": [
+          "Helpdesk",
+          "Infrastructure"
+        ],
+        "avg_mttr_hours": 16.0,
+        "linked_patterns": [
+          {
+            "pattern_id": 22,
+            "pattern_label": "Oracle Deadlock / Oracle Issues",
+            "shared_tickets": 4
+          }
+        ],
+        "recommendations": [],
+        "sample_resolutions": [
+          "Inconsistent lock acquisition order between two concurrent transactions Reviewed lock ordering in stored procedures, fixed transaction order",
+          "Inconsistent lock acquisition order between two concurrent transactions Reviewed lock ordering in stored procedures, fixed transaction order",
+          "Inconsistent lock acquisition order between two concurrent transactions Reviewed lock ordering in stored procedures, fixed transaction order"
+        ]
+      }
+    ],
+    "unresolved_insight": "92 ticket(s) remain open. 14 are P1 (critical). 83 have been open for more than 7 days.",
+    "top_repeated_actions": [
+      "completed successfully",
+      "successfully completed",
+      "load balancer",
+      "log rotation",
+      "reset accounts"
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "High",
+      "finding": "P1 SLA breached 28.6% of the time",
+      "action": "Review P1 escalation path, on-call coverage, and runbook completeness."
+    },
+    {
+      "priority": "High",
+      "finding": "14 P1 ticket(s) currently open",
+      "action": "Escalate open P1 incidents immediately; conduct a bridge call if multiple services affected."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Recurring pattern: 'Users Locked / Users Issues' (20 tickets, trend: Stable)",
+      "action": "Open a Problem ticket to address root cause. Top keywords: users locked, users, multiple users. Primarily affects: Email & Messaging, Customer Portal."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Recurring pattern: 'Database / Severely Issues' (16 tickets, trend: Stable)",
+      "action": "Open a Problem ticket to address root cause. Top keywords: database, severely, performance. Primarily affects: Data Warehouse, ERP System."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Recurring pattern: 'Reported / Vpn Disconnections Issues' (16 tickets, trend: Stable)",
+      "action": "Open a Problem ticket to address root cause. Top keywords: reported, vpn disconnections, vpn. Primarily affects: ERP System, CI/CD Pipeline."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Root cause cluster: 'Successfully / Completed Successfully' (60 tickets)",
+      "action": "Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Root cause cluster: 'Firewall / Updated' (41 tickets)",
+      "action": "Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Root cause cluster: 'Firewall / Updated' (41 tickets)",
+      "action": "Enforce canary/blue-green deployments and automated rollback triggers for failed health checks."
+    },
+    {
+      "priority": "Medium",
+      "finding": "Root cause cluster: 'Leak / Vpn' (22 tickets)",
+      "action": "Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts."
+    },
+    {
+      "priority": "Low",
+      "finding": "55.3% of resolved tickets have no root cause recorded",
+      "action": "Enforce root cause capture in closure workflow; add mandatory field to ticket resolution form."
+    }
+  ]
+}

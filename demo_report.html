@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ops Health Report — 2026-02-27 06:05 UTC</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#f8fafc; color:#1e293b; }
+  .page { max-width:1100px; margin:0 auto; padding:32px 20px; }
+  h1 { font-size:1.75rem; font-weight:700; color:#0f172a; }
+  h2 { font-size:1.25rem; font-weight:700; color:#1e293b; margin:28px 0 14px 0; padding-bottom:6px; border-bottom:2px solid #e2e8f0; }
+  h3 { font-size:1.05rem; font-weight:600; color:#334155; margin:20px 0 10px 0; }
+  table { width:100%; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; border:1px solid #e5e7eb; }
+  th { background:#f8fafc; padding:10px 12px; text-align:left; font-size:0.8rem; font-weight:700; color:#475569; text-transform:uppercase; letter-spacing:0.05em; }
+  td { padding:9px 12px; font-size:0.875rem; border-top:1px solid #f1f5f9; }
+  .score-circle { width:100px; height:100px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-direction:column; border:4px solid #7f1d1d; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;flex-wrap:wrap;gap:16px">
+    <div>
+      <h1>Ops Health Report</h1>
+      <p style="color:#64748b;margin-top:4px">Generated: 2026-02-27 06:05 UTC &nbsp;|&nbsp;
+        Period: 2025-11-28 → 2026-02-27
+      </p>
+    </div>
+    <div style="text-align:center">
+      <div class="score-circle">
+        <span style="font-size:2rem;font-weight:700;color:#7f1d1d">9</span>
+        <span style="font-size:0.7rem;font-weight:600;color:#7f1d1d">Critical</span>
+      </div>
+      <div style="font-size:0.75rem;color:#6b7280;margin-top:4px">Health Score</div>
+    </div>
+  </div>
+
+  <!-- Stat cards -->
+  <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px">
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#3b82f6">300</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">Total Tickets</div>
+          
+        </div>
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#f59e0b">92</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">Open</div>
+          <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px">currently active</div>
+        </div>
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#ef4444">14</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">P1 Open</div>
+          <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px">critical</div>
+        </div>
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#22c55e">208</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">Resolved</div>
+          
+        </div>
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#8b5cf6">39</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">Patterns</div>
+          <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px">recurring clusters</div>
+        </div>
+    
+        <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center;min-width:130px">
+          <div style="font-size:2rem;font-weight:700;color:#0ea5e9">10</div>
+          <div style="font-size:0.85rem;font-weight:600;color:#374151;margin-top:2px">Root Causes</div>
+          <div style="font-size:0.75rem;color:#9ca3af;margin-top:2px">identified</div>
+        </div>
+  </div>
+
+  <!-- Unresolved insight -->
+  <div style="background:#fefce8;border:1px solid #fde68a;border-radius:8px;padding:14px 16px;margin-bottom:24px;font-size:0.9rem;color:#713f12">
+    <strong>Open Ticket Status:</strong> 92 ticket(s) remain open. 14 are P1 (critical). 83 have been open for more than 7 days.
+  </div>
+
+  <!-- Priority & MTTR -->
+  <h2>Priority Breakdown & MTTR</h2>
+  <table>
+    <thead><tr>
+      <th>Priority</th><th>Total Tickets</th><th>Avg MTTR</th><th>SLA Breach %</th>
+    </tr></thead>
+    <tbody>
+        <tr>
+          <td><strong>P1</strong></td>
+          <td>49</td>
+          <td>3.7h</td>
+          <td>28.6%</td>
+        </tr>
+        <tr>
+          <td><strong>P2</strong></td>
+          <td>77</td>
+          <td>7.3h</td>
+          <td>38.6%</td>
+        </tr>
+        <tr>
+          <td><strong>P3</strong></td>
+          <td>148</td>
+          <td>10.6h</td>
+          <td>13.4%</td>
+        </tr>
+        <tr>
+          <td><strong>P4</strong></td>
+          <td>26</td>
+          <td>40.0h</td>
+          <td>12.5%</td>
+        </tr></tbody>
+  </table>
+
+  <!-- Category breakdown -->
+  <h2>Category Breakdown</h2>
+  <table>
+    <thead><tr><th>Category</th><th>Ticket Count</th></tr></thead>
+    <tbody><tr><td>Network</td><td>63</td></tr><tr><td>Database</td><td>49</td></tr><tr><td>Application</td><td>48</td></tr><tr><td>Access & Identity</td><td>32</td></tr><tr><td>Security</td><td>29</td></tr><tr><td>Infrastructure</td><td>26</td></tr><tr><td>Email & Communication</td><td>17</td></tr><tr><td>Storage & Backup</td><td>13</td></tr></tbody>
+  </table>
+
+  <!-- Recurring Patterns -->
+  <h2>Recurring Patterns (39 clusters detected)</h2>
+  
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Users Locked / Users Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>20</strong> tickets &nbsp;|&nbsp;
+            P1: 2 &nbsp;
+            P2: 9 &nbsp;
+            P3: 8 &nbsp;|&nbsp;
+            First: 2025-12-04 &nbsp; Last: 2026-02-24
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> Email & Messaging, Customer Portal, Data Warehouse &nbsp;|&nbsp;
+            <strong>Teams:</strong> Security Operations, Helpdesk, App Support
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 15.6h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">users locked</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">users</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">multiple users</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">out</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">out active</span></div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Database / Severely Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>16</strong> tickets &nbsp;|&nbsp;
+            P1: 5 &nbsp;
+            P2: 6 &nbsp;
+            P3: 3 &nbsp;|&nbsp;
+            First: 2025-12-09 &nbsp; Last: 2026-02-21
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> Data Warehouse, ERP System, Finance System &nbsp;|&nbsp;
+            <strong>Teams:</strong> Database Team, Network Operations, Helpdesk
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 7.1h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">database</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">severely</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">performance</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">performance severely</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">query</span></div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Reported / Vpn Disconnections Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>16</strong> tickets &nbsp;|&nbsp;
+            P1: 5 &nbsp;
+            P2: 4 &nbsp;
+            P3: 7 &nbsp;|&nbsp;
+            First: 2025-11-28 &nbsp; Last: 2026-02-02
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> ERP System, CI/CD Pipeline, Customer Portal &nbsp;|&nbsp;
+            <strong>Teams:</strong> Helpdesk, App Support, Database Team
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 8.9h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">reported</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">vpn disconnections</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">vpn</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">reported across</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">intermittent</span></div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Database / Slow Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>15</strong> tickets &nbsp;|&nbsp;
+            P1: 3 &nbsp;
+            P2: 4 &nbsp;
+            P3: 4 &nbsp;|&nbsp;
+            First: 2025-11-30 &nbsp; Last: 2026-02-13
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> Data Warehouse, Email & Messaging, VPN Gateway &nbsp;|&nbsp;
+            <strong>Teams:</strong> Identity & Access, Database Team, DevOps
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 10.1h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">database</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">slow</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">query alerts</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">slow query</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">production</span></div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Utilization 98 / Utilization Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>14</strong> tickets &nbsp;|&nbsp;
+            P1: 2 &nbsp;
+            P2: 7 &nbsp;
+            P3: 5 &nbsp;|&nbsp;
+            First: 2025-12-12 &nbsp; Last: 2026-02-22
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> HR Platform, Data Warehouse, CI/CD Pipeline &nbsp;|&nbsp;
+            <strong>Teams:</strong> Database Team, Network Operations, App Support
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 11.5h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">utilization 98</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">utilization</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">server disk</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">server</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">application</span></div>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <h4 style="margin:0;color:#1e293b">Backup / Space Issues</h4>
+            <span style="font-size:0.85rem;color:#6b7280;font-weight:600">→ Stable &nbsp;|&nbsp; Multiple times per week</span>
+          </div>
+          <p style="margin:6px 0;color:#64748b;font-size:0.85rem">
+            <strong>13</strong> tickets &nbsp;|&nbsp;
+            P1: 2 &nbsp;
+            P2: 4 &nbsp;
+            P3: 6 &nbsp;|&nbsp;
+            First: 2025-11-30 &nbsp; Last: 2026-02-16
+          </p>
+          <p style="margin:4px 0;font-size:0.8rem;color:#475569">
+            <strong>Services:</strong> VPN Gateway, HR Platform, Finance System &nbsp;|&nbsp;
+            <strong>Teams:</strong> Database Team, DevOps, Security Operations
+            &nbsp;|&nbsp; <strong>Avg MTTR:</strong> 14.2h
+          </p>
+          <div style="margin-top:8px"><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">backup</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">space</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">disk space</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">database</span><span style="background:#e0f2fe;color:#0369a1;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">insufficient disk</span></div>
+        </div>
+
+  <!-- Root Cause Clusters -->
+  <h2>Root Cause Clusters</h2>
+  
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <h4 style="margin:0 0 6px 0;color:#1e293b">Successfully / Completed Successfully</h4>
+          <p style="margin:4px 0;color:#64748b;font-size:0.85rem">
+            <strong>60</strong> tickets with this root cause
+            &nbsp;|&nbsp; Avg MTTR: 4.1h
+          </p>
+          <div style="margin:8px 0"><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">successfully</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">completed successfully</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">completed</span></div>
+          <ul style="margin:8px 0;padding-left:1.2em;font-size:0.85rem;color:#374151"><li>Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs.</li></ul>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <h4 style="margin:0 0 6px 0;color:#1e293b">Firewall / Updated</h4>
+          <p style="margin:4px 0;color:#64748b;font-size:0.85rem">
+            <strong>41</strong> tickets with this root cause
+            &nbsp;|&nbsp; Avg MTTR: 13.9h
+          </p>
+          <div style="margin:8px 0"><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">firewall</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">updated</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">firewall rule</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">rule</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">updated firewall</span></div>
+          <ul style="margin:8px 0;padding-left:1.2em;font-size:0.85rem;color:#374151"><li>Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.</li><li>Enforce canary/blue-green deployments and automated rollback triggers for failed health checks.</li></ul>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <h4 style="margin:0 0 6px 0;color:#1e293b">Leak / Vpn</h4>
+          <p style="margin:4px 0;color:#64748b;font-size:0.85rem">
+            <strong>22</strong> tickets with this root cause
+            &nbsp;|&nbsp; Avg MTTR: 13.0h
+          </p>
+          <div style="margin:8px 0"><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">leak</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">vpn</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">gateway</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">memory leak</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">memory</span></div>
+          <ul style="margin:8px 0;padding-left:1.2em;font-size:0.85rem;color:#374151"><li>Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts.</li><li>Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.</li></ul>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <h4 style="margin:0 0 6px 0;color:#1e293b">System / Hr</h4>
+          <p style="margin:4px 0;color:#64748b;font-size:0.85rem">
+            <strong>17</strong> tickets with this root cause
+            &nbsp;|&nbsp; Avg MTTR: 15.6h
+          </p>
+          <div style="margin:8px 0"><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">system</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">hr</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">hr system</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">reset</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">reset accounts</span></div>
+          <ul style="margin:8px 0;padding-left:1.2em;font-size:0.85rem;color:#374151"><li>Implement self-service password reset and proactive account expiry notifications.</li></ul>
+        </div>
+        <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin-bottom:12px">
+          <h4 style="margin:0 0 6px 0;color:#1e293b">Log / Log Rotation</h4>
+          <p style="margin:4px 0;color:#64748b;font-size:0.85rem">
+            <strong>14</strong> tickets with this root cause
+            &nbsp;|&nbsp; Avg MTTR: 9.8h
+          </p>
+          <div style="margin:8px 0"><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">log</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">log rotation</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">rotation</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">rotation frequency</span><span style="background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;font-size:0.75rem;margin:2px">old</span></div>
+          
+        </div>
+
+  <!-- Actionable Recommendations -->
+  <h2>Actionable Recommendations</h2>
+  <table>
+    <thead><tr><th style="width:90px">Priority</th><th>Finding</th><th>Recommended Action</th></tr></thead>
+    <tbody>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">High</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">P1 SLA breached 28.6% of the time</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Review P1 escalation path, on-call coverage, and runbook completeness.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">High</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">14 P1 ticket(s) currently open</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Escalate open P1 incidents immediately; conduct a bridge call if multiple services affected.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Recurring pattern: 'Users Locked / Users Issues' (20 tickets, trend: Stable)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Open a Problem ticket to address root cause. Top keywords: users locked, users, multiple users. Primarily affects: Email & Messaging, Customer Portal.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Recurring pattern: 'Database / Severely Issues' (16 tickets, trend: Stable)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Open a Problem ticket to address root cause. Top keywords: database, severely, performance. Primarily affects: Data Warehouse, ERP System.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Recurring pattern: 'Reported / Vpn Disconnections Issues' (16 tickets, trend: Stable)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Open a Problem ticket to address root cause. Top keywords: reported, vpn disconnections, vpn. Primarily affects: ERP System, CI/CD Pipeline.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Root cause cluster: 'Successfully / Completed Successfully' (60 tickets)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Add disk utilization alerts at 80 % / 90 % thresholds and schedule automated cleanup jobs.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Root cause cluster: 'Firewall / Updated' (41 tickets)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Review firewall rule changes, implement network topology documentation, and set up synthetic monitoring.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Root cause cluster: 'Firewall / Updated' (41 tickets)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Enforce canary/blue-green deployments and automated rollback triggers for failed health checks.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Medium</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">Root cause cluster: 'Leak / Vpn' (22 tickets)</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Profile the application for memory leaks, tune JVM/container memory limits, and set OOM alerts.</td>
+        </tr>
+        <tr style="border-bottom:1px solid #f1f5f9">
+          <td style="padding:10px 12px;vertical-align:top"><span style="background:#3b82f6;color:#fff;padding:2px 8px;border-radius:9999px;font-size:0.75rem;font-weight:600">Low</span></td>
+          <td style="padding:10px 12px;vertical-align:top;color:#374151">55.3% of resolved tickets have no root cause recorded</td>
+          <td style="padding:10px 12px;vertical-align:top;color:#1e293b">Enforce root cause capture in closure workflow; add mandatory field to ticket resolution form.</td>
+        </tr></tbody>
+  </table>
+
+  <!-- Footer -->
+  <div style="margin-top:40px;padding-top:16px;border-top:1px solid #e2e8f0;color:#94a3b8;font-size:0.75rem;text-align:center">
+    ServiceNow Ops Analyzer &nbsp;|&nbsp; 2026-02-27 06:05 UTC
+  </div>
+
+</div>
+</body>
+</html>
